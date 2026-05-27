@@ -1,24 +1,28 @@
-import java.util.ArrayList;
+
 
 public class Main {
     public static void main(String[] args){
 
         Drink drink1 = new Drink();
-        drink1.setSize("medium");
+        drink1.setDrinkSize(DrinkSize.MEDIUM);
 
 
-        Order order1 = new Order();
-        order1.addName("k");
+       Drink twisted = new Drink();
+       twisted.setDrinkSize(DrinkSize.LARGE);
 
-       // Drink twisted = new Drink();
-       // Drink drink;
-        //twisted.addDrink(drink);
+       Order mama = new Order();
+       mama.addDrink(twisted);
+       mama.addDrink(drink1);
 
 
-        Drink twisted = new Drink();
-        twisted.setSize("Large");
-        ArrayList<Drink> drinks = new ArrayList<>();
-        drinks.add(twisted);
+       System.out.println(drink1.getDrinkSize());
+        System.out.println(drink1.getPrice());
+
+        System.out.println(twisted.getDrinkSize());
+        System.out.println(twisted.getPrice());
+
+
+
 
 
 
