@@ -13,9 +13,15 @@ public class Order {
         //Drink  drink - method Drink accepts one drink object
         //this - drink list from current order object
         // add - take this one drink and add it to this order's drink list
-
-
     }
+
+    // getDrinks shows each drink
+    public ArrayList<Drink> getDrinks(){
+        return this.drinks;
+    }
+
+
+
     public double getDrinkTotal(){
         double total = 0 ;
 
