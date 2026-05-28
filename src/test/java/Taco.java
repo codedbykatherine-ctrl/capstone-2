@@ -7,6 +7,12 @@ public class Taco {
     private int quantity;
     private ArrayList<String> toppings = new ArrayList<>() ;
 
+    public void addTacoTopping(String topping){
+        toppings.add(topping);
+
+
+    }
+
 
 
     public void setTacoSize(String size) {
