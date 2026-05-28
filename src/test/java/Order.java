@@ -4,6 +4,11 @@ public class Order {
 
     //order owns drink list
     ArrayList<Drink> drinks = new ArrayList<>();
+    private ArrayList<Taco> orderTacos = new ArrayList<>();
+
+    public void addOrderTaco( Taco orderTaco){
+        orderTacos.add(orderTaco);
+    }
 
     // void does smt but give nothing in return
     public void addDrink(Drink drink){
@@ -31,6 +36,13 @@ public class Order {
         }                              // add the price into the total
         return total;
     }
+
+    public ArrayList<Taco> getOrderSummary(){
+        return orderTacos;
+    }
+
+
+
 
 
 
