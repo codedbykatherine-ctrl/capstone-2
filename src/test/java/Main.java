@@ -25,7 +25,12 @@ public class Main {
         }
         System.out.println( "Drinks Total: $ " + mama.getDrinkTotal());
 
+        Taco kat = new Taco();
+        kat.setTacoSize("medium");
+        kat.setTacoShell("corn spicy");
 
+
+        System.out.println(" Is this your taco " + " " + kat.getTacoSize() + " " + kat.getTacoShell());
 
 
 
