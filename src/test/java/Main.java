@@ -27,10 +27,11 @@ public class Main {
 
         Taco kat = new Taco();
         kat.setTacoSize("medium");
-        kat.setTacoShell("corn spicy");
+        kat.setTacoShell("corn ");
 
 
-        System.out.println(" Is this your taco " + " " + kat.getTacoSize() + " " + kat.getTacoShell());
+        System.out.println(" Is this your Taco:: \n "
+                + kat.TacoSummary());
 
 
 

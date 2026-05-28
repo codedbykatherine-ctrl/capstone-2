@@ -14,5 +14,9 @@ public String getTacoSize(){
     public String getTacoShell(){
         return this.shell;
     }
+    public String TacoSummary(){
+    return "Taco size: " + this.size +
+            " \n Taco shell:  " + this.shell;
+    }
 
 }
