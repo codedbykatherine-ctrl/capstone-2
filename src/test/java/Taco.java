@@ -42,7 +42,8 @@ public class Taco {
         return "Taco size: " + this.size +
                 " \n Taco shell: " + this.shell +
                 "\n Taco meat selection: " + this.meat +
-                "\n Taco Quantity:" + this.quantity;
+                "\n Taco Quantity:" + this.quantity +
+                "\n Taco Toppings:" + this.toppings;
     }
     public void setTacoQuantity(int quantity){
         this.quantity = quantity;
