@@ -10,6 +10,15 @@ public class Order {
         orderTacos.add(orderTaco);
     }
 
+    public String orderSummary(){
+        String summary = " ";
+        for ( Taco taco : orderTacos){
+            summary = summary + taco.tacoSummary();
+        }
+        return summary;
+    }
+
+
     // void does smt but give nothing in return
     public void addDrink(Drink drink){
         this.drinks.add(drink);
