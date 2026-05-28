@@ -1,7 +1,13 @@
+import java.util.ArrayList;
+
 public class Taco {
     private String size;
     private String shell;
     private String meat;
+    private int quantity;
+    private ArrayList<String> toppings = new ArrayList<>() ;
+
+
 
     public void setTacoSize(String size) {
         this.size = size;
@@ -29,7 +35,17 @@ public class Taco {
     public String tacoSummary() {
         return "Taco size: " + this.size +
                 " \n Taco shell: " + this.shell +
-                "\n Taco meat selection: " + this.meat;
+                "\n Taco meat selection: " + this.meat +
+                "\n Taco Quantity:" + this.quantity;
     }
+    public void setTacoQuantity(int quantity){
+        this.quantity = quantity;
+    }
+    public int getTacoQuantity(){
+        return this.quantity;
+    }
+
+
+
 
 }
