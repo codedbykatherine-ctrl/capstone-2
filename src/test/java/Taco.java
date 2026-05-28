@@ -5,13 +5,13 @@ public class Taco {
 public void setTacoSize (String size){
     this.size = size;
 }
-public String getSize(){
+public String getTacoSize(){
     return this.size;
 }
     public void setTacoShell (String shell){
         this.shell = shell;
     }
-    public String getShell(){
+    public String getTacoShell(){
         return this.shell;
     }
 
