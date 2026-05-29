@@ -6,11 +6,16 @@ public class Taco {
     private String meat;
     private int quantity;
     private ArrayList<String> toppings = new ArrayList<>() ;
+    private String tacoType;
 
     public void addTacoTopping(String topping){
         toppings.add(topping);
-
-
+    }
+    public void setTacoType(String tacoType){
+        this.tacoType = tacoType;
+    }
+    public String getTacoType(){
+        return this.tacoType;
     }
 
 
@@ -50,6 +55,10 @@ public class Taco {
     }
     public int getTacoQuantity(){
         return this.quantity;
+    }
+    public double tacoPrice(){
+       double totalPrice = 0;
+
     }
 
 
