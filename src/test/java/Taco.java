@@ -33,8 +33,8 @@ public class Taco {
           // meat pricing gets added here
           if (this.meat != null){
               totalPrice = totalPrice + this.meat.getPrice(this.tacoStyle);
-              totalPrice = totalPrice * this.quantity;
           }
+        totalPrice = totalPrice * this.quantity;
         return totalPrice;
 
     }
