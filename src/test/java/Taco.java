@@ -38,6 +38,9 @@ public class Taco {
           if (this.cheese != null){
               totalPrice = totalPrice +this.cheese.getPrice(this.tacoStyle);
           }
+          for (TacoToppings topping : toppings){
+              totalPrice= totalPrice + topping.getPrice(this.tacoStyle);
+          }
         totalPrice = totalPrice * this.quantity;
         return totalPrice;
 

@@ -3,23 +3,8 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        Order order = new Order();
-        Taco taco = buildTaco(scanner);
-
-        order.addOrderTaco(taco);
-        System.out.println("How many would you like?");
-        String quantityInput = scanner.nextLine();
-
-        int quantity = Integer.parseInt(quantityInput);
-
-        taco.setTacoQuantity(quantity);
-
-        System.out.println(order.orderSummary());
-        System.out.println("Order total: $" + order.orderTacoTotal());
-
-        scanner.close();
+        HomeScreen homeScreen = new HomeScreen();
+        homeScreen.showHomeScreen();
     }
 
     public static Taco buildTaco(Scanner scanner){
@@ -66,9 +51,6 @@ public class Main {
                 System.out.println("Invalid shell choice.");
         }
 
-        taco.setTacoSize("medium");
-        taco.addTacoTopping(TacoToppings.LETTUCE);
-        taco.setTacoQuantity(1);
 
         System.out.println("Choose meat:");
         System.out.println("1) Carne Asada");
@@ -188,8 +170,3 @@ public class Main {
     }
 
 }
-//  Drink drink1 = new Drink();
-//        drink1.setDrinkSize(DrinkSize.MEDIUM);
-//        drink1.getPrice();
-//        System.out.println(drink1.getPrice());
-//        System.out.println(drink1.getDrinkSize());

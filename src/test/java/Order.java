@@ -9,13 +9,31 @@ public class Order {
     public void addOrderTaco( Taco orderTaco){
         orderTacos.add(orderTaco);
     }
+    public double getOrderTotal(){
+        return orderTacoTotal()  + getDrinkTotal() + getChipsTotal();
+    }
 
     public String orderSummary(){
         String summary = " ";
         for ( Taco taco : orderTacos){
-            summary = summary + taco.tacoSummary();
+            summary = summary + taco.tacoSummary() + "\n";
         }
+        for(Drink drink : drinks){
+            summary = summary + drink.drinkSummary() + "\n";
+        }
+        for (ChipsAndSalsa chips : chipsAndSalsas){
+            summary = summary + chips.ChipsSummary() + "\n";
+        }
+        summary +=" \n Total: $"  + orderTacoTotal();
+
         return summary;
+    }
+
+    private ArrayList<ChipsAndSalsa> chipsAndSalsas= new ArrayList<>();
+
+    public void addChipsAndSalsa(ChipsAndSalsa chipsAndSalsa){
+        chipsAndSalsas.add(chipsAndSalsa);
+
     }
 
 
@@ -45,6 +63,13 @@ public class Order {
         }                              // add the price into the total
         return total;
     }
+    public double getChipsTotal(){
+        double total = 0;
+        for(ChipsAndSalsa chips : chipsAndSalsas){
+            total += chips.getPrice();
+        }
+        return total;
+    }
 
     public ArrayList<Taco> getOrderSummary(){
         return orderTacos;
@@ -56,6 +81,14 @@ public class Order {
             orderTacoTotal = orderTacoTotal + taco.tacoStylePrice();
         }
         return orderTacoTotal;
+
+        }
+    public String receiptSummary(){
+        return"===============  RECEIPT ===============\n"+
+                orderSummary() +
+                "\n ----------------------- \n" +
+                "\n Order total: $" + getOrderTotal()+
+                " \n =============================== \n";
 
     }
 
