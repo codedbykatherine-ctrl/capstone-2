@@ -30,8 +30,10 @@ public class Taco {
         } else if (this.tacoStyle.equalsIgnoreCase("Burrito")) {
               totalPrice = 8.50;
         }
+          // meat pricing gets added here
           if (this.meat != null){
               totalPrice = totalPrice + this.meat.getPrice(this.tacoStyle);
+              totalPrice = totalPrice * this.quantity;
           }
         return totalPrice;
 
