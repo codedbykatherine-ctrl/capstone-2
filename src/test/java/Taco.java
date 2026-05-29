@@ -35,6 +35,9 @@ public class Taco {
           if (this.meat != null){
               totalPrice = totalPrice + this.meat.getPrice(this.tacoStyle);
           }
+          if (this.cheese != null){
+              totalPrice = totalPrice +this.cheese.getPrice(this.tacoStyle);
+          }
         totalPrice = totalPrice * this.quantity;
         return totalPrice;
 
@@ -77,7 +80,8 @@ public class Taco {
                 "\n Taco meat selection: " + this.meat +
                 "\n Taco Quantity:" + this.quantity +
                 "\n Taco Toppings:" + this.toppings +
-                "\n Taco Shell Style:" + this.tacoStyle;
+                "\n Taco Shell Style:" + this.tacoStyle +
+                "\n Taco Cheese:" + this.cheese;
     }
     public void setTacoQuantity(int quantity){
         this.quantity = quantity;
