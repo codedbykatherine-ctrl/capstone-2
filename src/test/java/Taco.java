@@ -17,6 +17,8 @@ public class Taco {
     public String getTacoStyle(){
         return this.tacoStyle;
     }
+
+
     public double tacoStylePrice(){
         double totalPrice = 0;
 
@@ -28,6 +30,9 @@ public class Taco {
         } else if (this.tacoStyle.equalsIgnoreCase("Burrito")) {
               totalPrice = 8.50;
         }
+          if (this.meat != null){
+              totalPrice = totalPrice + this.meat.getPrice(this.tacoStyle);
+          }
         return totalPrice;
 
     }
