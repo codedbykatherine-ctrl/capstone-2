@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 public class Drink {
     private DrinkSize size;
     private String flavor;
