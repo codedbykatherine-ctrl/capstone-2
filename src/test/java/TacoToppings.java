@@ -1,4 +1,6 @@
 public enum TacoToppings {
+    EXTRA_MEAT,
+    EXTRA_CHEESE,
     LETTUCE,
     CILANTRO,
     ONIONS,
@@ -7,7 +9,7 @@ public enum TacoToppings {
     RADISHES,
     PICO,
     GUACAMOLE,
-    CORN,
+    CORN;
 
 
 

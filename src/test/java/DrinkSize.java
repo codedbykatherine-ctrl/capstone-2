@@ -21,5 +21,7 @@ public enum DrinkSize {    //stop invalid choices and organize related data
 
     }
 
+    // name add value
+
 
 }

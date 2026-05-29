@@ -7,17 +7,13 @@ public class Drink {
         this.size = size;
     }
 
-    public DrinkSize getDrink() {
+    public DrinkSize getDrinkSize() {
         return this.size;
     }
 
     public double getPrice(){
         return this.size.getPrice();
     }
- //   private  ArrayList<Drink> drinks = new ArrayList<>();
-
-    //public void addDrink(){
-       // this.drinks.add(Order);
 
 
 
