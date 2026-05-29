@@ -8,10 +8,21 @@ public class Main {
         Order kat = new Order();
 
         System.out.println("What taco style would you like?");
-        String tacoStyle = scanner.nextLine();
+        System.out.println("1) Single Taco - $3.50'");
+        System.out.println("2) 3 Taco Meal - $9.00");
+        System.out.println("3) Burrito - $8.50");
+        String tacoStyleChoice = scanner.nextLine();
         // what user type gets stored in variable name tacoStyle
 
-        express.setTacoStyle(tacoStyle);
+        if (tacoStyleChoice.equals("1")) {
+            express.setTacoStyle("Single");
+        } else if (tacoStyleChoice.equals("2")){
+            express.setTacoStyle(("3 taco "));
+        }else if (tacoStyleChoice.equals("3")){
+            express.setTacoStyle("Burrito");
+        }
+
+        express.setTacoStyle(tacoStyleChoice);
 
         express.setTacoSize("medium");
         express.setTacoShell("corn");
