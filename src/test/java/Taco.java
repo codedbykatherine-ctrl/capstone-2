@@ -5,11 +5,11 @@ public class Taco {
     private String shell;
     private Meat meat;
     private int quantity;
-    private ArrayList<String> toppings = new ArrayList<>() ;
+    private ArrayList<TacoToppings> toppings = new ArrayList<>() ;
     private String tacoStyle;
     private Cheese cheese;
 
-    public void addTacoTopping(String topping){
+    public void addTacoTopping(TacoToppings topping){
         toppings.add(topping);
     }
     public void setTacoStyle(String tacoStyle){
