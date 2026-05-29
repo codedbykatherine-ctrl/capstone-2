@@ -9,7 +9,7 @@ public enum TacoToppings {
     RADISHES(0, 0, 0),
     PICO(0, 0, 0),
     GUACAMOLE(0, 0, 0),
-    CORN(0, 0, 0),
+    CORN(0, 0, 0);
     private final double singlePrice;
     private final double threeTacoPrice;
     private final double burritoPrice;
@@ -30,5 +30,5 @@ public enum TacoToppings {
         }
 
         return 0;
-
+    }
 }
