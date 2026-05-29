@@ -6,16 +6,30 @@ public class Taco {
     private String meat;
     private int quantity;
     private ArrayList<String> toppings = new ArrayList<>() ;
-    private String tacoType;
+    private String tacoStyle;
 
     public void addTacoTopping(String topping){
         toppings.add(topping);
     }
-    public void setTacoType(String tacoType){
-        this.tacoType = tacoType;
+    public void setTacoStyle(String tacoType){
+        this.tacoStyle = tacoStyle;
     }
-    public String getTacoType(){
-        return this.tacoType;
+    public String getTacoStyle(){
+        return this.tacoStyle;
+    }
+    public double tacoStylePrice(){
+        double totalPrice = 0;
+
+        if (this.tacoStyle.equalsIgnoreCase("Single")){
+            totalPrice = 3.50;
+        }
+          else if  (this.tacoStyle.equalsIgnoreCase("3 taco")){
+              totalPrice = 9.00;
+        } else if (this.tacoStyle.equalsIgnoreCase("Burrito")) {
+              totalPrice = 8.50;
+        }
+        return totalPrice;
+
     }
 
 
@@ -55,10 +69,6 @@ public class Taco {
     }
     public int getTacoQuantity(){
         return this.quantity;
-    }
-    public double tacoPrice(){
-       double totalPrice = 0;
-
     }
 
 
