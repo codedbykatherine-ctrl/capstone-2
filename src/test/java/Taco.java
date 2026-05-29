@@ -3,7 +3,7 @@ import java.util.ArrayList;
 public class Taco {
     private String size;
     private String shell;
-    private String meat;
+    private Meat meat;
     private int quantity;
     private ArrayList<String> toppings = new ArrayList<>() ;
     private String tacoStyle;
@@ -50,10 +50,10 @@ public class Taco {
         return this.shell;
     }
 
-    public void setTacoMeat(String meat) {
+    public void setTacoMeat(Meat meat) {
         this.meat = meat;
     }
-    public String getTacoMeat(){
+    public Meat getTacoMeat(){
         return this.meat;
     }
 
