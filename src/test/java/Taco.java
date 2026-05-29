@@ -11,7 +11,7 @@ public class Taco {
     public void addTacoTopping(String topping){
         toppings.add(topping);
     }
-    public void setTacoStyle(String tacoType){
+    public void setTacoStyle(String tacoStyle){
         this.tacoStyle = tacoStyle;
     }
     public String getTacoStyle(){
@@ -62,7 +62,8 @@ public class Taco {
                 " \n Taco shell: " + this.shell +
                 "\n Taco meat selection: " + this.meat +
                 "\n Taco Quantity:" + this.quantity +
-                "\n Taco Toppings:" + this.toppings;
+                "\n Taco Toppings:" + this.toppings +
+                "\n Taco Shell Style:" + this.tacoStyle;
     }
     public void setTacoQuantity(int quantity){
         this.quantity = quantity;
