@@ -31,14 +31,19 @@ public class Main {
 //        }
 //        System.out.println( "Drinks Total: $ " + mama.getDrinkTotal());
 //
-//        Taco kat = new Taco();
-//        kat.setTacoSize("medium");
+      Taco express = new Taco();
+      Order kat = new Order();
+        express.setTacoSize("medium");
+        express.addTacoTopping("lettuce");
+        express.setTacoQuantity(4);
+        kat.addOrderTaco(express);
+        System.out.println(kat.orderSummary());
 //        kat.setTacoShell("corn ");
 //        kat.setTacoMeat("steak");
 //       kat.setTacoQuantity(4);
 //
-//        System.out.println(" Is this your Taco:: \n "
-//                + kat.tacoSummary());
+       System.out.println(" Is this your Taco:: \n "
+                + express.tacoSummary());
 
 
 
