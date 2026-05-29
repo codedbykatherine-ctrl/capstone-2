@@ -50,6 +50,15 @@ public class Order {
         return orderTacos;
     }
 
+    public double orderTacoTotal(){
+        double orderTacoTotal = 0;
+        for( Taco taco : orderTacos){
+            orderTacoTotal = orderTacoTotal + taco.tacoStylePrice();
+        }
+        return orderTacoTotal;
+
+    }
+
 
 
 
