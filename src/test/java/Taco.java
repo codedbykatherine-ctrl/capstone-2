@@ -7,6 +7,7 @@ public class Taco {
     private int quantity;
     private ArrayList<String> toppings = new ArrayList<>() ;
     private String tacoStyle;
+    private Cheese cheese;
 
     public void addTacoTopping(String topping){
         toppings.add(topping);
@@ -37,6 +38,12 @@ public class Taco {
         totalPrice = totalPrice * this.quantity;
         return totalPrice;
 
+    }
+    public void setTacoCheese(Cheese cheese){
+        this.cheese = cheese;
+    }
+    public Cheese getTacoCheese(){
+        return this.cheese;
     }
 
 
